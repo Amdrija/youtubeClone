@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav>
+        <div class = "logo">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            viewBox="0 0 24 24" id="menu-icon">
+                <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
+                </path>
+            </svg>
+            <img height="50" src="Resources/youtube_full_color_light_logo/digital_and_tv/yt_logo_rgb_light.svg">
+        </div>
+        <div class = "search-box-container">
+            <div class = "search-box">
+                <input type = "text" value="Search">
+                <button class = "search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                    viewBox="0 0 24 24"
+                    id="search-icon">
+                        <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 
+                        16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 
+                        14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 
+                        12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 
+                        6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class = "icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            viewBox="0 0 24 24"
+            class = "icon" id="#video-icon">
+                <path d="M 3 5 C 1.897 5 1 5.897 1 7 L 1 17 C 1 18.103 1.897 19 3 19 L 16 19 C 17.103 19 18 18.103 18 
+                17 L 18 14.080078 L 23 18.080078 L 23 5.9199219 L 18 9.9199219 L 18 7 C 18 5.897 17.103 5 16 5 L 3 5 z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            viewBox="0 0 24 24"
+            class = "icon" id="app-drawer-icon">
+                <path d="M 3 3 L 3 7 L 7 7 L 7 3 L 3 3 z M 10 3 L 10 7 L 14 7 L 14 3 L 10 3 z M 17 3 L 17 7 L 21 7 L 21 3 L 
+                17 3 z M 3 10 L 3 14 L 7 14 L 7 10 L 3 10 z M 10 10 L 10 14 L 14 14 L 14 10 L 10 10 z M 17 10 L 17 14 L 21 14 
+                L 21 10 L 17 10 z M 3 17 L 3 21 L 7 21 L 7 17 L 3 17 z M 10 17 L 10 21 L 14 21 L 14 17 L 10 17 z M 17 17 L 17 
+                21 L 21 21 L 21 17 L 17 17 z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            viewBox="0 0 24 24"
+            class = "icon" id="notification-icon">
+                <path d="M 12 2 C 11.172 2 10.5 2.672 10.5 3.5 L 10.5 4.1953125 C 7.913 4.8623125 6 7.205 6 10 L 6 16 L 4 18 L 4 19 
+                L 20 19 L 20 18 L 18 16 L 18 10 C 18 7.205 16.087 4.8642656 13.5 4.1972656 L 13.5 3.5 C 13.5 2.672 12.828 2 12 2 z M 
+                10 20 C 10 21.105 10.896 22 12 22 C 13.104 22 14 21.104 14 20 L 10 20 z">
+                </path>
+            </svg>
+            <div class="profile">
+                A
+            </div>
+        </div>
+    </nav>
+    <div class = "container">
+        <section class = "video">
+            <div class = "video-player">
+
+            </div>
+            <div class = "video-text">
+                <h3 id="video-title">Video Title</h3>
+                <div class = "video-information">
+                    <div class = "views-date">
+                        13.415.456 views • 21.03.2020.
+                    </div>
+                    <div class = "video-menu">
+                        <div class = "bottom-highlight">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            viewBox="0 0 24 24"
+                            class="icon video-menu-icon">
+                                <path d="M 14.167969 1 L 7.5839844 7.5957031 C 7.2099844 7.9707031 7 8.4778125 7 9.0078125 L 7 19 C 7 
+                                20.105 7.895 21 9 21 L 17.992188 21 C 18.791188 21 19.514078 20.524062 19.830078 19.789062 L 22.837891 
+                                12.787109 C 22.944891 12.538109 23 12.269047 23 11.998047 L 23 10 C 23 8.895 22.105 8 21 8 L 14.648438 
+                                8 L 15.585938 3.703125 C 15.731938 3.033125 15.522203 2.3335625 15.033203 1.8515625 L 14.167969 1 z M 
+                                1 9 L 1 21 L 5 21 L 5 9 L 1 9 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class = "video-menu-text bottom-highlight">288K</div>
+
+                        <div class = "bottom-highlight">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            viewBox="0 0 24 24"
+                            class="icon video-menu-icon">
+                                <path d="M 2 2 C 1.448 2 1 2.448 1 3 L 1 13 C 1 13.552 1.448 14 2 14 L 4 14 C 4.552 14 5 13.552 5 13 L 5 
+                                3 C 5 2.448 4.552 2 4 2 L 2 2 z M 9 2 C 7.895 2 7 2.895 7 4 L 7 13.992188 C 7 14.522187 7.2099844 15.029297 
+                                7.5839844 15.404297 L 13.113281 20.945312 C 13.696281 21.529312 14.640516 21.533078 15.228516 20.955078 C 
+                                15.595516 20.594078 15.752578 20.068453 15.642578 19.564453 L 14.648438 15 L 21 15 C 22.105 15 23 14.105 23 
+                                13 L 23 11.001953 C 23 10.730953 22.944891 10.461891 22.837891 10.212891 L 19.830078 3.2109375 C 19.515078 
+                                2.4759375 18.791188 2 17.992188 2 L 9 2 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class = "video-menu-text bottom-highlight">1K</div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 24 24"
+                        class="icon video-menu-icon">
+                            <path d="M 18 2 A 3 3 0 0 0 15 5 A 3 3 0 0 0 15.054688 5.5605469 L 7.9394531 9.7109375 A 3 3 0 0 0 6 9 A 3 3 0 
+                            0 0 3 12 A 3 3 0 0 0 6 15 A 3 3 0 0 0 7.9355469 14.287109 L 15.054688 18.439453 A 3 3 0 0 0 15 19 A 3 3 0 0 0 
+                            18 22 A 3 3 0 0 0 21 19 A 3 3 0 0 0 18 16 A 3 3 0 0 0 16.0625 16.712891 L 8.9453125 12.560547 A 3 3 0 0 0 9 
+                            12 A 3 3 0 0 0 8.9453125 11.439453 L 16.060547 7.2890625 A 3 3 0 0 0 18 8 A 3 3 0 0 0 21 5 A 3 3 0 0 0 18 2 z">
+                            </path>
+                        </svg>
+                        <div class = "video-menu-text">SHARE</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 24 24"
+                        class="icon video-menu-icon">
+                            <path d="M 3 3 L 3 5 L 21 5 L 21 3 L 3 3 z M 3 9 L 3 11 L 21 11 L 21 9 L 3 9 z M 17.5 13 L 15.941406 16.453125 
+                            L 12 16.818359 L 14.933594 19.273438 L 14.107422 23 L 17.5 21 L 20.982422 23 L 19.974609 19.273438 L 23 16.818359 
+                            L 19.058594 16.455078 L 17.5 13 z M 3 15 L 3 17 L 10.025391 17 C 10.071391 16.302 10.211547 15.633 10.435547 15 L 3 15 z">
+                            </path>
+                        </svg>
+                        <div class = "video-menu-text">SAVE</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        viewBox="0 0 24 24"
+                        class="icon video-menu-icon">    
+                            <path d="M 6 10 A 2 2 0 0 0 4 12 A 2 2 0 0 0 6 14 A 2 2 0 0 0 8 12 A 2 2 0 0 0 6 10 z M 12 10 A 2 2 0 0 0 10 12 A 2 2 0 0 
+                            0 12 14 A 2 2 0 0 0 14 12 A 2 2 0 0 0 12 10 z M 18 10 A 2 2 0 0 0 16 12 A 2 2 0 0 0 18 14 A 2 2 0 0 0 20 12 A 2 2 0 0 0 18 10 z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "sidebar"></section>
+    </div>
+</body>
+
+</html>
