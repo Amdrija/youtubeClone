@@ -3,19 +3,21 @@
 
 <head>
     <title>YouTube</title>
+    <link rel="icon" href="Resources/icons8-play-button-96.ico" type="image/icon type">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/radio_button.css">
 </head>
 <body>
     <nav>
         <div class = "logo">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            viewBox="0 0 24 24" id="menu-icon">
+            viewBox="0 0 24 24" id="menu-icon" class="icon">
                 <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
                 </path>
             </svg>
-            <img height="50" src="Resources/youtube_full_color_light_logo/digital_and_tv/yt_logo_rgb_light.svg">
+            <img height="50" src="Resources/yt_logo_rgb_light.svg">
         </div>
         <div class = "search-box-container">
             <div class = "search-box">
@@ -67,13 +69,15 @@
     <div class = "container">
         <section class = "video">
             <div class = "video-player">
-
+                <iframe src="https://www.youtube.com/embed/VzUIAVwlIZ0" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video-frame">
+                </iframe>
             </div>
             <div class = "video-text">
-                <h3 id="video-title">Video Title</h3>
+                <h3 id="video-title">DJEXON - KAKO SI SPAVALA (Official Video)</h3>
                 <div class = "video-information">
                     <div class = "views-date">
-                        <h5>13.415.456 views • 21.03.2020.</h5>
+                        <h5>1.626.710 views • 14.11.2019.</h5>
                     </div>
                     <div class = "video-menu">
                         <div class = "bottom-highlight">
@@ -88,7 +92,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class = "video-menu-text bottom-highlight">288K</div>
+                        <div class = "video-menu-text bottom-highlight">18K</div>
 
                         <div class = "bottom-highlight">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -103,7 +107,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class = "video-menu-text bottom-highlight">1K</div>
+                        <div class = "video-menu-text bottom-highlight">464</div>
 
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                         viewBox="0 0 24 24"
@@ -141,19 +145,181 @@
                     </div>
                     <div class = "author-information">
                         <h4 class = "author-name">
-                            Author Name
+                            Malahit Digital
                         </h4>
-                        <h5>
+                        <h6>
                             32.3M subscribers
-                        </h5>
+                        </h6>
                     </div>
                     <div class="description-text">
-                        
+                        <p>
+                            DJEXON on INSTAGRAM:<br>
+                            <a href="https://bit.ly/2SY24LF">https://bit.ly/2SY24LF</a><br>
+                            <br>
+                            ✅Subscribe to Malahit Digital™: <a href="https://goo.gl/jsRQyx">https://goo.gl/jsRQyx</a><br>
+                            ©️Label & Copyright: Malahit Digital™<br>
+                            Digital Distribution: Malahit Digital™<br>
+                            ---------------------------------------------------------------------------<br>
+                            📞Booking Manager:  Dača +381621645776<br>
+                            📧E-mail: ktzhilluminati@gmail.com<br>
+                            👕QRTOWEAR® Online Shop: <a href="https://goo.gl/YLCiS7">https://goo.gl/YLCiS7</a><br>
+                            ---------------------------------------------------------------------------<br>
+                            🔹Text: Nemanja Djerić, Jovan Janković<br>
+                            🔹Arr: Nemanja Djerić<br>
+                            🔹Mix & Master: Nemanja Djerić<br>
+                            ---------------------------------------------------------------------------<br>
+                            🔸Directed by: MalahitDigital<br>
+                            🔸Camera: Deyan 77 <a href="https://goo.gl/EYXQ97">https://goo.gl/EYXQ97</a><br>
+                            🔸Support: "GET LOW"<br>
+                        </p>
                     </div>
                 <button class = "subscribe">SUBSCRIBE</button>
             </div>
         </section>
-        <section class = "sidebar"></section>
+        <section class = "sidebar">
+            <div class = "next-video">
+                <div class = "up-next">
+                    <span>NEXT</span>
+                    <span class = "autoplay-container">
+                        AUTOPLAY
+                        <input type="checkbox" id="switch" />
+                        <label for="switch">Toggle</label>
+                    </span>
+                </div>
+                <div class = "video-card" id="next-video-card">
+                    <div class = "video-picture">
+                        <img class="video-img" alt="" 
+                        src="https://i.ytimg.com/vi/LCczVMGCNJ8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCGSmp-hU8m7BB6hPBkgmKiRsS5Cg" 
+                        width="168">
+                    </div>
+                    <div class = "video-card-information">
+                        <h4>z++ - kabriolet</h4>
+                        <h6>Retfatlanta Records</h6>
+                        <h6>2.1M views • 7 months ago</h6>
+                    </div>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/nl71vFvVOvw/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAkStKlxAYooK3J5A5iv0liJ15HSw" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>The Weeknd - Too Late (Audio)</h4>
+                    <h6>The Weeknd</h6>
+                    <h6>Recommended for you</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/8mYd2X_9rrs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDS8UtwBIfitcMqsiRdWMrg0dA9AQ" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Pendulum - Crush (Official Video)</h4>
+                    <h6>pendulumlive</h6>
+                    <h6>Recommended for you</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/tEPB7uzKuh4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLCyZbYqNE8hrzBL_Ie3R1EqaX8IZA" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Pendulum - Watercolor (Official Video)</h4>
+                    <h6>pendulumlive</h6>
+                    <h6>Recommended for you</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/-l-G0jQCB48/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAdb3HFRK7jfDjcPwESiZvZt7w-jw" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>GAZDA PAJA - AUSLANDER feat THCF</h4>
+                    <h6>Two Louder TV</h6>
+                    <h6>15M views • 2 months ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/ogMNV33AhCY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLD9nNQxgmB-ErJWbl7lySZrTppBJQ" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Pendulum - Witchcraft (Official Video)</h4>
+                    <h6>pendulumlive</h6>
+                    <h6>39M views • 9 years ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/_o-XIryB2gg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLC-Rfe8B1xubhFel4M3jaKd_fgHeg" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Dimitri Vegas, MOGUAI & Like Mike - Mammoth (Original Mix)</h4>
+                    <h6>Spinnin' Records</h6>
+                    <h6>148M views • 7 years ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/h7ArUgxtlJs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDfwWbfPESBk32HbtlVWzJXtLiHWA" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>deadmau5 feat. Rob Swire - Ghosts N Stuff</h4>
+                    <h6>Ultra music</h6>
+                    <h6>56M views • 10 years ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/r1ATFedwjnk/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLDnh33uOqM5wjR7Xzzaq0TAv-lG1A" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Nero - Guilt</h4>
+                    <h6>NERO</h6>
+                    <h6>19M views • 9 years ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/swoTHB4um0M/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&amp;rs=AOn4CLDyWhyLoKCqZW0VB-v9lpm3EXxNCQ"
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Jay Hardway – Let Me Tell You Something (Official Music Video)</h4>
+                    <h6> Spinnin' Records</h6>
+                    <h6>441k views • 1 year ago</h6>
+                </div>
+            </div>
+            <div class = "video-card">
+                <div class = "video-picture">
+                    <img class="video-img" alt="" 
+                    src="https://i.ytimg.com/vi/qke-jOUqSXU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLDPfoer6Kh96wXkqtN_SweTuiS3aQ" 
+                    width="168">
+                </div>
+                <div class = "video-card-information">
+                    <h4>Camelphat & Elderbrook 'Cola'</h4>
+                    <h6>Defected Records</h6>
+                    <h6>104M views • 2 years ago</h6>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
